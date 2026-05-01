@@ -36,11 +36,11 @@ const jsonLd = {
   "@type": "Article",
   headline: "Who is Atharv? From Hindi Medium to Full-Stack Developer",
   description: "The journey of Atharv, a self-taught full-stack developer from Prayagraj who built products used by thousands.",
-  author: { "@type": "Person", name: "Atharv", url: "https://atharv.dev" },
-  publisher: { "@type": "Person", name: "Atharv", url: "https://atharv.dev" },
+  author: { "@type": "Person", name: "Atharv", url: "https://atharvdev.sanchetna.in" },
+  publisher: { "@type": "Person", name: "Atharv", url: "https://atharvdev.sanchetna.in" },
   datePublished: "2025-05-01",
   dateModified: "2025-05-01",
-  mainEntityOfPage: "https://atharv.dev/blog/who-is-atharv",
+  mainEntityOfPage: "https://atharvdev.sanchetna.in/blog/who-is-atharv",
   inLanguage: "en",
 };
 

@@ -23,7 +23,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 /* ─── Comprehensive SEO Metadata ─── */
 export const metadata: Metadata = {
-  metadataBase: new URL("https://atharv.dev"),
+  metadataBase: new URL("https://atharvdev.sanchetna.in"),
   title:
     "Atharv | Full-Stack Developer & AI Platform Architect — Prayagraj, India",
   description:
@@ -108,7 +108,7 @@ export const metadata: Metadata = {
     "self-taught developer India",
     "developer journey blog",
   ],
-  authors: [{ name: "Atharv", url: "https://atharv.dev" }],
+  authors: [{ name: "Atharv", url: "https://atharvdev.sanchetna.in" }],
   creator: "Atharv",
   publisher: "Atharv",
   robots: {
@@ -123,7 +123,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://atharv.dev",
+    canonical: "https://atharvdev.sanchetna.in",
   },
   openGraph: {
     type: "profile",
@@ -131,7 +131,7 @@ export const metadata: Metadata = {
       "Atharv | Full-Stack Developer & AI Platform Architect",
     description:
       "Full-stack software developer specializing in Next.js, TypeScript, and AI-integrated platforms. Building scalable web applications in Prayagraj, India.",
-    url: "https://atharv.dev",
+    url: "https://atharvdev.sanchetna.in",
     siteName: "Atharv — Developer Portfolio",
     locale: "en_IN",
     firstName: "Atharv",

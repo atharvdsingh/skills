@@ -138,9 +138,9 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "Person",
-      "@id": "https://atharv.dev/#person",
+      "@id": "https://atharvdev.sanchetna.in/#person",
       name: "Atharv",
-      url: "https://atharv.dev",
+      url: "https://atharvdev.sanchetna.in",
       jobTitle:
         "Full-Stack Software Developer & AI-Integrated Platform Architect",
       description:
@@ -205,13 +205,13 @@ const jsonLd = {
     },
     {
       "@type": "ProfilePage",
-      "@id": "https://atharv.dev/#profilepage",
-      url: "https://atharv.dev",
+      "@id": "https://atharvdev.sanchetna.in/#profilepage",
+      url: "https://atharvdev.sanchetna.in",
       name: "Atharv — Full-Stack Developer & AI Platform Architect Portfolio",
       description:
         "Portfolio of Atharv, a full-stack software developer from Prayagraj, India. Specializing in Next.js, TypeScript, Node.js, NestJS, and AI-integrated platform architecture.",
       mainEntity: {
-        "@id": "https://atharv.dev/#person",
+        "@id": "https://atharvdev.sanchetna.in/#person",
       },
       dateCreated: "2025-05-01",
       dateModified: "2025-05-01",
@@ -219,13 +219,13 @@ const jsonLd = {
     },
     {
       "@type": "WebSite",
-      "@id": "https://atharv.dev/#website",
-      url: "https://atharv.dev",
+      "@id": "https://atharvdev.sanchetna.in/#website",
+      url: "https://atharvdev.sanchetna.in",
       name: "Atharv — Developer Portfolio",
       description:
         "Personal portfolio of Atharv, a full-stack developer and AI platform architect based in Prayagraj, India.",
       publisher: {
-        "@id": "https://atharv.dev/#person",
+        "@id": "https://atharvdev.sanchetna.in/#person",
       },
       inLanguage: "en",
     },

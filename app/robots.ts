@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/admin/", "/private/"],
       },
     ],
-    sitemap: "https://atharv.dev/sitemap.xml",
+    sitemap: "https://atharvdev.sanchetna.in/sitemap.xml",
   };
 }
