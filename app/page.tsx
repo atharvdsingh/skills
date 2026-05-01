@@ -16,6 +16,9 @@ import {
   Layout,
   BrainCircuit,
   Server,
+  BookOpen,
+  Users,
+  Eye,
 } from "lucide-react";
 
 /* ─── Data ─── */
@@ -30,7 +33,7 @@ const personal = {
 };
 
 const about =
-  "A software developer specializing in building scalable web applications and AI-integrated platforms. Passionate about modern web development, agentic AI systems, and robust system architecture.";
+  "I build things that people actually use. From a notes platform that hit 1,800+ users and 200K views to AI-powered productivity tools, I focus on shipping real products that solve real problems. I believe systems beat motivation, and I back that up with code every single day.";
 
 const skills = {
   coreStack: {
@@ -77,6 +80,21 @@ const experience = [
       "Conducting ML research at one of India's premier technical institutes, focusing on applied machine learning methodologies and data-driven model development.",
   },
   {
+    role: "Backend Developer (AI Product)",
+    company: "Startup, Bengaluru",
+    location: "Bengaluru",
+    timeline: "2025",
+    description:
+      "Built backend systems for an AI product. Relocated to Bengaluru, worked on production-grade APIs, and shipped features used by real users.",
+  },
+  {
+    role: "Full-Stack Developer & Designer",
+    company: "Tech Agency",
+    timeline: "2023 – 2025",
+    description:
+      "Managed end-to-end development: UI/UX design, frontend, backend, multilingual sites, and Web3 wallet integrations. Applied to 300 companies, rejected by 284, hired at this one. Grew from video editing to full-stack engineering.",
+  },
+  {
     role: "Technical Infrastructure Manager",
     company: "Sanchetna (NGO)",
     location: "Jari, Allahabad",
@@ -87,6 +105,13 @@ const experience = [
 ];
 
 const projects = [
+  {
+    name: "NoteBuddy",
+    description:
+      "Notes sharing platform for university students. Grew to 1,800+ users, 100s of paid subscribers, 200K+ views, and 15K daily traffic during exams. Built, marketed, and managed entirely solo.",
+    tags: ["Next.js", "Product", "1800+ Users", "200K Views"],
+    stats: { users: "1,800+", views: "200K+", dailyTraffic: "15K" },
+  },
   {
     name: "Workmind",
     description:
@@ -278,6 +303,12 @@ export default function HomePage() {
                   Experience
                 </a>
               </Button>
+              <Button asChild variant="ghost" size="lg">
+                <a href="/blog/who-is-atharv">
+                  <BookOpen className="mr-2 h-4 w-4" aria-hidden="true" />
+                  Read My Story
+                </a>
+              </Button>
             </div>
           </div>
 
@@ -315,11 +346,18 @@ export default function HomePage() {
               </p>
               <p className="text-base leading-relaxed text-muted-foreground">
                 Currently pursuing my MCA at the University of Allahabad, I
-                combine academic rigor with hands-on experience building
-                production-grade software. I focus on crafting systems that are
-                not only performant but architecturally sound and maintainable at
-                scale.
+                combine academic rigor with hands-on production experience.
+                Applied to 300 companies, got rejected by 284, and turned that
+                into a career building real products used by thousands. I focus
+                on systems over motivation.
               </p>
+              <a
+                href="/blog/who-is-atharv"
+                className="inline-flex items-center gap-2 text-sm font-medium text-foreground underline underline-offset-4 transition-colors hover:text-muted-foreground"
+              >
+                <BookOpen className="h-4 w-4" aria-hidden="true" />
+                Read my full journey
+              </a>
             </div>
 
             {/* Info cards */}
@@ -548,8 +586,22 @@ export default function HomePage() {
                   {project.description}
                 </p>
 
+                {/* Stats row for NoteBuddy */}
+                {"stats" in project && project.stats && (
+                  <div className="mt-4 flex gap-4">
+                    <div className="flex items-center gap-1.5 text-xs text-muted-foreground">
+                      <Users className="h-3 w-3" aria-hidden="true" />
+                      <span className="font-mono">{project.stats.users}</span>
+                    </div>
+                    <div className="flex items-center gap-1.5 text-xs text-muted-foreground">
+                      <Eye className="h-3 w-3" aria-hidden="true" />
+                      <span className="font-mono">{project.stats.views}</span>
+                    </div>
+                  </div>
+                )}
+
                 {/* Tech tags */}
-                <div className="mt-5 flex flex-wrap gap-2">
+                <div className="mt-4 flex flex-wrap gap-2">
                   {project.tags.map((tag) => (
                     <span key={tag} className="skill-tag text-[0.65rem]">
                       {tag}
